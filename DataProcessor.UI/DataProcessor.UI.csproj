@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Westermo.HtmlRenderer">
+      <HintPath>lib\Westermo.HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="Westermo.HtmlRenderer.WinForms">
+      <HintPath>lib\Westermo.HtmlRenderer.WinForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
