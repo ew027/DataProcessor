@@ -1,9 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Meta.Numerics" Version="4.1.4" />
+  </ItemGroup>
+
+  <!-- Exclude the old DataTable.cs since DataStore.cs replaces it -->
+  <ItemGroup>
+    <Compile Remove="DataTable.cs" />
+  </ItemGroup>
 
 </Project>

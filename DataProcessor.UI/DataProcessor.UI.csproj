@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataProcessor.Engine\DataProcessor.Engine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Westermo.HtmlRenderer">
       <HintPath>lib\Westermo.HtmlRenderer.dll</HintPath>
     </Reference>

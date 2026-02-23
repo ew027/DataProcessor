@@ -34,6 +34,8 @@
             this.newCodeEditorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newWebViewMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newDataGridMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openScriptMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadDataMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.cascadeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +62,8 @@
             // fileMenu
             this.fileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
                 this.newMenu,
+                this.openScriptMenuItem,
+                this.loadDataMenuItem,
                 this.exitMenuItem});
             this.fileMenu.Name = "fileMenu";
             this.fileMenu.Size = new System.Drawing.Size(37, 20);
@@ -91,6 +95,18 @@
             this.newDataGridMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newDataGridMenuItem.Text = "&Data Grid";
             this.newDataGridMenuItem.Click += new System.EventHandler(this.newDataGridMenuItem_Click);
+
+            // openScriptMenuItem
+            this.openScriptMenuItem.Name = "openScriptMenuItem";
+            this.openScriptMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openScriptMenuItem.Text = "&Open Script...";
+            this.openScriptMenuItem.Click += new System.EventHandler(this.openScriptMenuItem_Click);
+
+            // loadDataMenuItem
+            this.loadDataMenuItem.Name = "loadDataMenuItem";
+            this.loadDataMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadDataMenuItem.Text = "Load &Data (CSV)...";
+            this.loadDataMenuItem.Click += new System.EventHandler(this.loadDataMenuItem_Click);
 
             // exitMenuItem
             this.exitMenuItem.Name = "exitMenuItem";
@@ -168,6 +184,8 @@
         private ToolStripMenuItem newCodeEditorMenuItem;
         private ToolStripMenuItem newWebViewMenuItem;
         private ToolStripMenuItem newDataGridMenuItem;
+        private ToolStripMenuItem openScriptMenuItem;
+        private ToolStripMenuItem loadDataMenuItem;
         private ToolStripMenuItem exitMenuItem;
         private ToolStripMenuItem windowMenu;
         private ToolStripMenuItem cascadeMenuItem;

@@ -34,8 +34,9 @@
 
             // toolStrip
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+                new ToolStripButton("Load", null, null, "Load"),
                 new ToolStripButton("Save", null, null, "Save"),
-                new ToolStripButton("Run", null, null, "Run")
+                new ToolStripButton("Run",  null, null, "Run")
             });
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";

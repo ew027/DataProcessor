@@ -1,22 +1,24 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataProcessor.Engine.Interfaces
 {
     public interface IColumn
     {
         string Name { get; }
-        string Description { get; set; }
+        string? Description { get; set; }
         Type DataType { get; }
+        ColumnType ColumnType { get; }
         bool IsCategorical { get; }
         int Count { get; }
+        Dictionary<int, string>? Labels { get; }
         object GetValueAsObject(int index);
-        void SetValueFromObject(int index, object value);
+        void SetValueFromObject(int index, object? value);
         bool IsNull(int index);
         void AddRow();
         void RemoveRow(int index);
+        void AddLabel(int value, string label);
+        IColumn Clone(bool convertToDouble);
+        void Reorder(int[] newOrder);
     }
 }
